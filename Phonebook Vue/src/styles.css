@@ -1,0 +1,197 @@
+/* General Styles */
+body,
+h1,
+h2,
+p,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(45deg, #1c1c1c, #2b2b2b, #f06);
+  animation: backgroundAnimation 20s infinite;
+  color: #fff;
+  overflow: hidden;
+}
+
+@keyframes backgroundAnimation {
+  0%, 100% {
+    background: linear-gradient(45deg, #1c1c1c, #2b2b2b, #f06);
+  }
+  50% {
+    background: linear-gradient(45deg, #f06, #2b2b2b, #1c1c1c);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  border: 2px solid #f06;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+  transform: translateY(20px);
+  animation: containerAnimation 0.8s cubic-bezier(0.42, 0.15, 0.3, 0.81) 0.5s forwards;
+}
+
+@keyframes containerAnimation {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Tab buttons */
+.tab button {
+  background: linear-gradient(to right, #f06, #f90);
+  color: #fff;
+  padding: 30px 60px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 20px;
+  font-size: 28px;
+  transition: background 0.5s, transform 0.3s, box-shadow 0.5s;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tab button:hover {
+  background: linear-gradient(to right, #f90, #f06);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Tab content */
+.tabcontent {
+  display: none;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+button {
+  background-color: #f06;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c40533;
+}
+
+/* Dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Animated underline for tab buttons */
+.tablinks {
+  position: relative;
+}
+
+.tablinks::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f06;
+  transition: width 0.3s;
+}
+
+.tablinks:hover::after {
+  width: 100%;
+}
+
+/* Styling for specific tabs */
+#Phonebook.tabcontent {
+  background-color: #f8f7f3;
+  color: #333;
+}
+#PhonebookDetails.tabcontent {
+  background-color: #f1f1f1;
+  color: #333;
+}
+#AddPhonebook button {
+  background-color: #f06;
+}
+
+#AddPhonebook button:hover {
+  background-color: #c40533;
+}
+
+/* Styling for the Add Entries section */
+#AddEntries.tabcontent {
+  background-color: #f8f7f3;
+  color: #333;
+}
+
+#AddEntries input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#AddEntries button {
+  background-color: #f06;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+#AddEntries button:hover {
+  background-color: #c40533;
+}
+
+#AddEntries select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
