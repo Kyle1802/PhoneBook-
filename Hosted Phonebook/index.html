@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone Book</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tab">
+      <button class="tablinks" data-tab="Phonebook">Phonebook</button>
+      <button class="tablinks" data-tab="AddEntries">Add Entries</button>
+      <button class="tablinks" data-tab="AddPhonebook">Add Phonebook</button>
+    </div>
+    <!-- Phonebook Tab -->
+    <form id="Phonebook" class="tabcontent">
+      <h2>Phonebook</h2>
+      <input type="text" id="phonebookFilter" placeholder="🔍 Search for phonebooks..." />
+      <ul id="phonebookList">
+      </ul>
+      <div id="PhonebookDetails">
+        <h2>Details</h2>
+        <input type="text" id="entryFilter" placeholder="🔍 Search for entries..." />
+        <ul id="entryList">
+        </ul>
+      </div>
+    </form>
+    <!-- Add Entries Tab -->
+    <form id="AddEntries" class="tabcontent">
+      <h2>Add Entries</h2>
+      <select id="phonebookSelect">
+      </select>
+      <input type="text" id="nameInput" placeholder="Name" />
+      <input type="text" id="numberInput" placeholder="Number" />
+      <button id="saveEntry" class="btn btn-primary">Save</button>
+      <button id="cancelEntry" class="btn btn-secondary">Cancel</button>
+    </form>
+    <!-- Add Phonebook Tab -->
+    <form id="AddPhonebook" class="tabcontent">
+      <h2>Add Phonebook</h2>
+      <input type="text" id="newPhonebookInput" placeholder="Phonebook Name" />
+      <button id="savePhonebook" class="btn btn-primary">Save</button>
+      <button id="cancelPhonebook" class="btn btn-secondary">Cancel</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
