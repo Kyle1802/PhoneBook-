@@ -1,0 +1,12 @@
+This is the hosted site that contains 4 files.
+index is the main html file 
+save data is the php code  to connect and save to phpmyadmin 
+script is all the javascript for data and filtering and buttons 
+style is all css
+
+
+This site is hosted via 000webhost and uses a domain name from godaddy that i linked 
+using the DNS servers and set up the database through 000webhost.
+
+the site does pick up as dangerous due to uploading off many files for testing purposes 
+however it is safe.
