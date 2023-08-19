@@ -9,4 +9,7 @@ This site is hosted via 000webhost and uses a domain name from godaddy that i li
 using the DNS servers and set up the database through 000webhost.
 
 the site does pick up as dangerous due to uploading off many files for testing purposes 
-however it is safe.
+however it is safe. You may access it via http://www.greentechresolutions.co.za/
+
+Everything does work excpet for the two pages in terms of saving to the databse. Due to time i am not able to 
+get it to my liking.
